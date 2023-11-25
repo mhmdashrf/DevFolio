@@ -1,0 +1,755 @@
+
+/*--------------------------------------------------------------
+# General
+----------------------------------------------------*/
+:root{
+    --main-color:#0078FF;
+    --color-text:#fff;
+    --hover-main-color:#0078FF;
+     --bg-layer: #0077ffbd;
+     --black-color:#000;
+}
+
+html{
+    scroll-behavior: smooth;
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+h1{
+    font-size: 72px;
+}
+body{
+    background-color: #F5F5F5;
+  
+}
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+/*--------------------------------------------------------------
+# General
+----------------------------------------------------*/
+/*--------------------------------------------------------------
+# home
+----------------------------------------------------*/
+#home{
+    background-image: url(../images/img01.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 9;
+}
+#home .layer{
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.5);
+
+}
+h6{
+    color:#4e4e4e;
+}
+.dropdown-menu{
+        color: var(--black-color);
+    }
+.navbar{
+    background-color: rgba(0, 0, 0, 0.884);
+    z-index: 999;
+}
+.modal{
+    z-index: 9999;
+    --bs-modal-width: 1000px;
+}
+.modal-header{
+    border: none;
+}
+.modal-footer{
+    border: none;
+}
+.line{
+    background-color: var(--main-color);
+    width: 30px;
+    height: 4px;
+    margin: auto;
+}
+.navbar-brand{
+    color: var(--color-text);
+    font-size: 28px;
+    padding: 0;
+}
+
+.dropdown-li{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+  position: absolute;
+  background-color: var(--color-text);
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: 70%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    color: var(--main-color);
+  }
+
+.dropdown-li:hover .dropdown-content {
+    display: block;
+}
+
+.navbar-toggler{
+  color: var(--color-text);
+  background-color: var(--color-text);
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 0;
+    margin: 0px 10px;
+}
+.nav-link{
+    position: relative;
+    transition: all 0.5s;
+    font-size: 1rem;
+    color: var(--color-text); 
+    padding: 0;  
+    font-size: 20px;
+ }
+ .nav-link:hover{
+    color: var(--color-text); 
+ }
+ .nav-link::before{
+   content: "";
+   position: absolute;
+   width: 0;
+   height: 2px;
+   background-color: #fff;
+   left: 0;
+   bottom: 0;
+   transition: all 0.5s;
+}
+ .nav-link:hover::before{
+    width: 100%;
+} 
+ .nav-link.active::before{
+   width: 80%;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: var(--color-text);
+}
+.dropdown:hover> .dropdown-menu {
+   display: block;
+}
+.icon-top{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 8;
+}
+.icon-top i{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: var(--color-text);
+    width: 50px;
+    height: 50px;
+    background-color: #0078FF;
+    border-radius: 50%;
+}
+.icon-top i:hover{
+    background-color: #0077ffde;
+}
+/*--------------------------------------------------------------
+# home
+----------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# about
+----------------------------------------------------*/
+#about{
+    margin-top: 50px;
+}
+.about-text p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.about-text h2{
+    position: relative;
+    padding-bottom: 10px;
+}
+.about-text h2::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 4px;
+    background-color: var(--main-color);
+    bottom: 0;
+    left: 0;
+}
+ /*--------------------------------------------------------------
+# about
+----------------------------------------------------*/
+/*--------------------------------------------------------------
+# services
+----------------------------------------------------*/
+.card{
+    text-align: center;
+}
+.card .icon{
+    width: 120px;
+    height: 120px;
+    border: 10px solid var(--main-color);
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.perant-icon{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.card .icon i{
+    font-size: 40px;
+    text-align: center;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.card:hover .icon{
+    border-color: #a9c7e9;
+    background-color: var(--main-color);
+}
+.card:hover i{
+    color: var(--color-text);
+}
+.btn-close{
+    --bs-btn-close-opacity: 1;
+    --bs-btn-close-hover-opacity: 1;
+    --bs-btn-close-bg: none;
+    --bs-btn-close-focus-shadow:none;
+}
+.services-text h2{
+    font-size: 48px;
+    line-height: 58px;
+}
+/*--------------------------------------------------------------
+# services
+----------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# work
+----------------------------------------------------*/
+#work{
+    margin: 50px 0px;
+    background-image: url(../images/img14.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 80vh;
+}
+
+.layer-work{
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: var(--bg-layer);
+
+}
+.icon-work i{
+    font-size: 30px;
+    line-height: 48px;
+}
+.boeder-icon{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 8px solid #ffffffa9;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+.boeder-icon i{
+    text-align: center;
+}
+.border-color{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 40px;
+    height: 40px ;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+}
+.border-color{
+    color: var(--main-color);
+}
+.card-portfolio{
+    overflow: hidden;
+
+}
+.img-card{
+    overflow: hidden;
+}
+.img-card img{
+    -webkit-transition: all ease-in-out 0.7s;
+    -o-transition: all ease-in-out 0.7s;
+    transition: all ease-in-out 0.7s;
+}
+.card-portfolio:hover .img-card img{
+   -webkit-transform: scale(1.2);
+       -ms-transform: scale(1.2);
+           transform: scale(1.2);
+
+}
+/*--------------------------------------------------------------
+# services
+----------------------------------------------------*/
+/*--------------------------------------------------------------
+# testmonial
+----------------------------------------------------*/
+
+#testmonial{
+    background-image: url(../images/img10.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    min-height: 80vh;
+
+}
+.layer-bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--bg-layer);
+}
+/*--------------------------------------------------------------
+# testmonial
+----------------------------------------------------*/
+/*--------------------------------------------------------------
+# model-carousel
+----------------------------------------------------*/
+.modal-header,.modal-footer{
+    border: none;
+    background-color: inherit;
+}
+.btn-close{
+    box-sizing:inherit; 
+     margin-bottom:  20px;
+    background-color: inherit;
+    background-image: inherit;
+    width: 2rem;
+    height: 2rem;
+    --bs-btn-close-opacity: 1;
+}
+.modal-content{
+  background-color: inherit;
+  border: 0;
+}
+.btn-close i{
+ color: white;
+}
+
+.modal{
+    --bs-body-bg: inherit;
+}
+.test-img img{
+    width: 100%;
+}
+
+/*--------------------------------------------------------------
+# model-carousel
+----------------------------------------------------*/
+/*--------------------------------------------------------------
+# blog
+----------------------------------------------------*/
+.card-body{
+    position: relative;
+}
+.button-card{
+    position: absolute;
+    text-align: center;
+    top: -22px;
+    left: 15px;
+    right: 15px;
+    line-height: 25px;
+}
+.pearnt-button{
+    display: inline-block;
+    color: var(--color-text);
+    padding: 0 15px 0px;
+    overflow: hidden;
+    background-color: var(--main-color);
+    border-radius: 4px;
+    font-size: 15px;
+    text-align: center;
+}
+.pearnt-button h6{
+    color: var(--color-text);
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-bottom:0;
+}
+
+.card-title{
+    -webkit-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s;
+    padding-bottom: 5px;
+}
+.anchor-hover:hover{
+    color: var(--main-color);
+}
+.card-body .card-title:hover{
+    color: var(--main-color);
+}
+.bg-end{
+    background-color: #F5F5F5;
+}
+.anchor-card h6{
+    -webkit-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+    transition: all ease-in-out 0.5s;
+}
+.anchor-card img{
+    width: 15%;
+}
+.bg-end .anchor-card:hover h6{
+    color: var(--main-color);
+}
+/*--------------------------------------------------------------
+# blog
+----------------------------------------------------*/
+/*--------------------------------------------------------------
+# contact
+----------------------------------------------------*/
+.hero-img{
+    background-image: url(../images/img10.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+}
+ .layer-contact{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--bg-layer); 
+}
+.social-icons .i{
+    padding-top: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 45px;
+    height: 45px;
+    border: 4px solid var(--main-color);
+    border-radius: 50%;
+    margin-right: 10px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.social-icons .i:hover{
+    border: 4px solid #a9c7e9;
+    background-color: var(--main-color);
+    color: var(--color-text);
+}
+
+.social-icons i{
+    font-size: 20px;
+}
+.parent-contact h2 {
+   position: relative;
+   padding-bottom: 10px;
+}
+.parent-contact h2::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-color: var(--main-color);
+    left: 0;
+    bottom: 0;
+}
+
+.social li i{
+    color: var(--main-color);
+}
+.button button{
+    background-color: var(--main-color);
+    border: none;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    border: 3px solid var(--main-color);
+}
+.button button:hover{
+    border-color:  #a9c7e9;
+    background-color: var(--main-color);
+} 
+.footer-parent{
+    background-color: var(--main-color);
+    text-align: center;
+}
+form input{
+    padding: 5px 10px;
+}
+form textarea{
+    padding: 15px 10px;
+}
+.button button{
+    padding: 7px 7px;
+}
+/*--------------------------------------------------------------
+# contact
+----------------------------------------------------*/
+/*--------------------------------------------------------------
+# media screen size (1200px)
+----------------------------------------------------*/
+@media (max-width:1200px){
+    .dropdown-content{
+        left: -80%;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+      }
+}
+/*--------------------------------------------------------------
+# media screen size (1200px)
+----------------------------------------------------*/
+/*--------------------------------------------------------------
+# media screen size (991px)
+----------------------------------------------------*/
+
+@media (max-width:991px){
+    .dropdown-content a {
+        padding: 5px;
+    }
+    .nav-after:hover::after{
+        right:90%;
+        opacity: 1;
+        width: 40px
+    }
+    .dropdown-content{
+        left: 80%;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+      }
+      .navbar-toggler{
+        font-size: 15px;
+    }
+  
+}
+/*--------------------------------------------------------------
+# media screen size (991px)
+----------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# media screen size (767px)
+----------------------------------------------------*/
+@media (max-width:767px){
+    .container{
+        margin: auto;
+        width: 95%;
+    }
+    .media{
+        width: 50%;
+        margin-bottom: 10px;
+    } 
+    .dropdown-content a {
+        padding: 5px;
+    }
+    .nav-after:hover::after{
+        right:90%;
+        opacity: 1;
+        width: 40px
+    }
+    
+    
+    
+    .navbar-toggler{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .p-por p{
+        font-size: 10px;
+    }
+    .p-por h6{
+        font-size: 12px;
+    }
+    .anchor-card h6{
+        font-size: 10px;
+    }
+ .parent-a a{
+    font-size: 10px;
+}
+
+.social li{
+    font-size: 10px;
+}
+.social-icons .i i{
+    font-size: 10px;
+
+}
+
+.social-icons .i{
+   width: 25px;
+   height: 25px;
+}
+.about-text p{
+    font-size: 15px;
+}
+
+.card-body p{
+    font-size: 15px;
+}
+.card-body h5{
+    font-size: 20px;
+
+}
+.p-meadia{
+    font-size: 15px;
+}
+form input{
+    padding: 10px 10px;
+}
+
+form textarea{
+    padding: 15px 10px;
+}
+.button button{
+    padding: 5px 5px;
+}
+.icon-top i{
+    width: 30px;
+    height: 30px;
+}
+
+.pearnt-button h6{
+    font-size: 7px;
+}
+
+.modal{
+    z-index: 9999;
+    --bs-modal-width: 600px;
+    height: 100%;
+    overflow: hidden;
+}
+.border-color{
+    width: 30px;
+    height: 30px;
+}
+}
+/*--------------------------------------------------------------
+# media screen size (1200px)
+----------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# media screen size (500px)
+----------------------------------------------------*/
+@media (max-width: 500px) {
+    .container{
+        margin: auto;
+        width: 90%;
+    }
+      .nav-after:hover::after{
+        right:90%;
+        opacity: 1;
+        width: 40px
+    }
+    .button button{
+        padding: 5px 5px;
+    }
+    figcaption p{
+        font-size: 15px;
+    }
+    .modal{
+        z-index: 9999;
+        --bs-modal-width: 600px;
+        height: 80%;
+        overflow: hidden;
+    }
+    .p-meadia{
+        font-size: 11px;
+    }
+}
+/*--------------------------------------------------------------
+# media screen size (500px)
+----------------------------------------------------*/
